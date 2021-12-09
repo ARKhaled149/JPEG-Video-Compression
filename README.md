@@ -1,2 +1,2 @@
 # JPEG-Video-Compression
-Video Compression using frame differencing with Python and OpenCV
+This project was divided into 2 parts: encoding and decoding as well. I used MSE (mean Square Error) in block matching. Then I calculated the motion vector. The next step was I subtracted each block from its best matched block. In the decoding part, I had residual frames and motion vectors for each block in each frame, assuming I will also use frames 0,15,30 and 45 as reference frames like in the previous project but using blocks. Finally, merge all Y, Cb and Cr channels and convert it back to RGB then create the video again from the sequence of frames.
